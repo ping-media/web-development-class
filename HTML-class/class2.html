@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web development class 2</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="class1.html" >class 1</a></li>
+                <li><a href="class2.html" >class 2</a></li>
+                <li><a href="class 3.html" >class 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>This is a heading tag for web development class.</h1>
+            <p>This is a paragraph tag for web development class.</p>
+            <a href="https://www.google.com" ><img src="https://images.pexels.com/photos/19384006/pexels-photo-19384006/free-photo-of-portrait.jpeg"  alt="This is a portrait image" width="20%"/></a> 
+            <img src="sunset.jpg" />  
+
+        </section>
+        <hr>
+        <section>
+            <form method="get" action="#">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" id="name" name="name" class="form-control"  height="20" width="20"/>
+                    
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email" id="email" name="email" class="form-control" required autocomplete="off" autofocus/>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" name="password" class="form-control"/>
+                </div>
+                <div>
+                    <label for="number">Number</label>
+                    <input type="number" placeholder="Enter your number" id="number" name="number" class="form-control"  max="9999999999" step="100"/>
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" placeholder="Enter your number" id="phone" name="phone" class="form-control"/>
+                </div>
+
+                <input type="hidden" name="hidden_input" value="deep"/>
+
+                <p>Gender</p>
+                <div>
+                    
+                    <input type="radio" id="male" name="gender" value="male" class="form-control" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" class="form-control" checked/>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" class="form-control"/>
+                    <label for="other">Other</label>
+                </div>
+
+                <p>food preference</p>
+                <div>
+                    <input type="checkbox" id="veg" name="food" value="veg" class="form-control" />
+                    <label for="chicken">Veg</label>
+                    <input type="checkbox" id="non-veg" name="food" value="non-veg" class="form-control" checked/>
+                    <label for="non-veg">Non-Veg</label>
+                    <input type="checkbox" id="chicken" name="food" value="chicken" class="form-control"/>
+                    <label for="chicken">Chicken</label>
+                </div>
+                <p>Select your city</p>
+                <div>
+                    <select name="city" id="city" class="form-control">
+                        <option value="">Select your city</option>
+                        <option value="delhi" >Delhi</option>
+                        <option value="mumbai" selected>Mumbai</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+
+                    <select name="country">
+                        <option value="">Select your country</option>
+                        <option value="pakistan">India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Australia</option>
+                        <option>Canada</option>
+                        <option>New Zealand</option>
+                        
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Step 1</legend>
+                    <div></div>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" name="name" class="form-control" maxlength="10" minlength="3" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email" id="email" name="email" class="form-control" required/>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" id="password" name="password" class="form-control"/>
+                    </div>
+                    <div>
+                        <label for="number">Number</label>
+                        <input type="number" placeholder="Enter your number" id="number" name="number" class="form-control"  max="9999999999" step="100"/>
+                    </div>
+                    <textarea name="address" id="address" placeholder="Enter your address" class="form-control" rows="5" cols="50"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Step 2</legend>
+                    <div></div>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" name="name" class="form-control" maxlength="10" minlength="3" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email" id="email" name="email" class="form-control" required/>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" id="password" name="password" class="form-control"/>
+                    </div>
+                    <div>
+                        <label for="number">Number</label>
+                        <input type="number" placeholder="Enter your number" id="number" name="number" class="form-control"  max="9999999999" step="100"/>
+                    </div>
+                    <textarea name="address" id="address" placeholder="Enter your address" class="form-control" rows="5" cols="50"></textarea>
+                </fieldset>
+
+                <input type="file" name="file" id="file" class="form-control" accept="image/png"/>
+                
+                <input type="image" alt="Click me!" src="submit-btn.png" width="80" />
+                <input type="reset" value="Reset" name="reset" id="reset"/>
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
