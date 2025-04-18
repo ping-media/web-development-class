@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <fieldset>
+        <legend>Hello</legend>
+        <h1>This is <abbr title="World Health Organization">Web development </abbr> <small>Web development</small>class</h1>
+        <p>This is <address>Dev Nagar, Khandari, Agra, Uttar Pradesh, India</address></p>
+        <p>This is <cite>Web development</cite> class</p>
+        <p>This is <code>Ctrl + S</code> <kbd>Ctrl + S</kbd></p>
+        <p>This is <del>Web development</del> class</p>
+        <p>This is <ins>Web development</ins> class</p>
+        <p>This is <mark>Web development</mark> class</p>
+        <p>This is  class</p>
+        
+    </fieldset> -->
+
+    
+    <!-- open dialog on button click -->
+    <button id="openDialog">Open Dialog</button>
+    <dialog id="dialog">
+        <p>This is an open dialog window</p>
+        <button id="closeDialog">Close Dialog</button>
+    </dialog>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML is a markup language that is used to create web pages. It is a standard markup language for documents designed to be displayed in a web browser.</p>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Web development" width="50%"/>
+    </details>
+
+    <details>
+        <summary>What is CSS?</summary>
+        <h3>CSS is a style sheet language that is used to describe the presentation of a document written in HTML or XML. CSS describes how elements should be rendered on screen, on paper, or in other media.</h3>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="Web development" width="50%"/>
+    </details>
+
+    <ruby>
+        <rb>
+            网页开发很容易</rb>
+        <rp>
+            <rp>HTML</rp>
+        </rp>
+        <rt>Web development is easy we can learn it in 10 days</rt>
+    </ruby>
+
+    <hr>
+
+    <pre>
+        html is a markup language
+        css is a style         sheet language
+        javascript is a programming language
+    </pre>
+
+    <hr>
+    <label for="file">Downloading progress</label>
+    <progress id="file" value="50" max="60"> 32% </progress>
+    <meter id="disk" value="2" min="0" max="10" low="3" high="8" optimum="10">8 out of 10</meter>
+
+    <hr>
+    <table border="1" width="100%" bgcolor="green">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr bgcolor="red">
+                <td bgcolor="red">Umesh </td>
+                <td>25</td>
+                <td>Agra</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Mahesh </td>
+                <td>25</td>
+                <td>Agra</td>
+                <td>100</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>200</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+    
+</body>
+    <!-- <form action="">
+        <div><input type="color" name="color" id="color" /></div>
+        <div><input type="date" name="date" id="date" /></div>
+        <div><input type="datetime-local" name="datetime-local" id="datetime-local" /></div>
+        <div><input type="time" name="time" id="time" /></div>
+        <div><input type="week" name="week" id="week" /></div>
+        <div><input type="month" name="month" id="month" /></div>
+        <div><input type="range" name="range" id="range" /></div>
+        <div><input type="search" name="search" id="search" /></div>
+        <input type="text" list="city" name="city" id="city"/>
+        <datalist id="city">
+            <option value="Delhi">
+            <option value="Mumbai">
+            <option value="Kolkata">
+            <option value="Chennai">
+            <option value="Bangalore">
+        </datalist>
+        <button type="submit">Submit</button>
+    </form> -->
+</body>
+<script>
+    const dialog = document.getElementById('dialog');
+    const openDialog = document.getElementById('openDialog');
+    const closeDialog = document.getElementById('closeDialog');
+    openDialog.addEventListener('click', () => {
+        dialog.showModal();
+    });
+    closeDialog.addEventListener('click', () => {
+        dialog.close();
+    });
+</script>
+</html>
