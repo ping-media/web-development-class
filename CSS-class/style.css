@@ -7,7 +7,7 @@ header{
     background-color: lightblue;
     color: #fff;
     padding: 10px 20px;
-    text-align: right;
+    text-align: center;
 }
 header nav a{
     color: #000;
@@ -21,17 +21,40 @@ header nav a img{
 .logo{
     /* float: left; */
 }
+
+/* main section */
 main{
-    min-height: 70vh;
-    background-color: #f1f1f1;
-    color: red;
-    width: 60%;
+    min-height: 120vh;
+    width: 100%;
+    
 }
-main p{
-    color: inherit;
-    border-left: 5px solid blue;
-    margin-bottom: 20px;
-    /* border-radius: 10px; */
+/* section1  */
+main .section1{
+    padding: 20px;
+    background: linear-gradient(to right, #6a5fff 10%, #f628a7 90%);
+}
+/* section 2 */
+main .section2{
+    padding: 20px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(245, 242, 242, 0.4)), url(../assets/img/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* section 3 */
+main .section3{
+    padding: 20px;
+    background: rgb(255, 88, 88)
+}
+/* section 4 */
+main .section4{
+    padding: 20px;
+    /* background: linear-gradient(145deg, #444, #ff8e8e), url(../assets/img/sunset.jpg); */
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/img/sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 aside{
     background-color: rgb(250, 236, 147);
@@ -40,8 +63,5 @@ aside{
 footer{
     background-color: #333;
     color: #fff;
-}
-
-.footer-bottom{
 }
    
