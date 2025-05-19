@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .section1 {
+            background-color: yellow;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 30px;
+        }
+        .section2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .section2 .main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #ffcccb;
+            flex: 1;
+        }
+        .section2 article {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section2 aside {
+            padding: 20px;
+            flex: 0 0 200px;
+            background-color: #ff9800;
+        }
+        @media (max-width: 1400px) and (min-width: 1201px) {
+            .section1 {
+                background-color: #ff9800;
+            }
+        }
+        @media (max-width: 1200px) {
+            .section1 {
+                background-color: #34e618;
+            }
+        }
+        @media (max-width: 992px) {
+            .section2{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <h1>Media Queries</h1>
+        <p>Resize the window to see the effect.</p>
+    </section>
+
+    <section class="section2">
+        <div class="main">
+            <article>
+                <h2>Media Queries</h2>
+                <p>Media queries are a powerful feature of CSS that allow you to apply styles based on the characteristics of the device or viewport. They enable responsive design, ensuring that your website looks good on all devices.</p>
+                <p>In this example, we have a section with a background color that changes based on the width of the viewport. The colors change at specific breakpoints, demonstrating how media queries can be used to create a responsive layout.</p>
+            </article>
+            <article>
+                <h2>Media Queries</h2>
+                <p>Media queries are a powerful feature of CSS that allow you to apply styles based on the characteristics of the device or viewport. They enable responsive design, ensuring that your website looks good on all devices.</p>
+                <p>In this example, we have a section with a background color that changes based on the width of the viewport. The colors change at specific breakpoints, demonstrating how media queries can be used to create a responsive layout.</p>
+            </article>
+            <article>
+                <h2>Media Queries</h2>
+                <p>Media queries are a powerful feature of CSS that allow you to apply styles based on the characteristics of the device or viewport. They enable responsive design, ensuring that your website looks good on all devices.</p>
+                <p>In this example, we have a section with a background color that changes based on the width of the viewport. The colors change at specific breakpoints, demonstrating how media queries can be used to create a responsive layout.</p>
+            </article>
+            <article>
+                <h2>Media Queries</h2>
+                <p>Media queries are a powerful feature of CSS that allow you to apply styles based on the characteristics of the device or viewport. They enable responsive design, ensuring that your website looks good on all devices.</p>
+                <p>In this example, we have a section with a background color that changes based on the width of the viewport. The colors change at specific breakpoints, demonstrating how media queries can be used to create a responsive layout.</p>
+            </article>
+            
+        </div>
+        <aside>
+            <p>this is sidebar</p>
+        </aside>
+    </section>
+</body>
+</html>
