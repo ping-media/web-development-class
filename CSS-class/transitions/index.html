@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            /* transition-property: width, background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: 0s; */
+            /* transition: width 1s ease 0s, background-color 1s ease 0s, border-radius 1s ease 0s; */
+            /* transition: all 2s ease-in-out 200ms; */
+        }
+        .box:hover{
+            background-color: yellow;
+            width: 600px;
+            border-radius: 30px;
+            transform: scale(1.5);
+            transform: rotate(360deg);
+        }
+        .game_cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .card{
+            /* color: #fff; */
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: greenyellow;
+            border: solid 2px greenyellow;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            
+            /* transition: transform 0.3s ease-in-out; */
+        }
+        .card img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover{
+            /* transform: scale(1.05); */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            transform: translateY(-10px);
+            
+        }
+        .card:hover img{
+            transform: scale(1.1);
+        }
+
+        .card h3{
+            text-align: center;
+            padding: 10px;
+            /* color: #fff; */
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        .card button{
+            background-color: #000;
+            color: #fff;
+            border: solid 1px #000;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <!-- <div class="box"></div> -->
+
+        <div class="game_cards">
+            <div class="card">
+                <img src="../../assets/img/marketplace1.png" alt="card">
+                <h3>Naruto</h3>
+                <button>Know More</button>
+            </div>
+            <div class="card">
+                <img src="../../assets/img/marketplace2.png" alt="card">
+                <h3>Naruto</h3>
+                <button>Know More</button>
+            </div>
+            <div class="card">
+                <img src="../../assets/img/marketplace3.png" alt="card">
+                <h3>Naruto</h3>
+                <button>Know More</button>
+            </div>
+            <div class="card">
+                <img src="../../assets/img/marketplace4.png" alt="card">
+                <h3>Naruto</h3>
+                <button>Know More</button>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
