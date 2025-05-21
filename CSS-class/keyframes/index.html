@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        /* @keyframes myAnimation {
+            0% {background-color: coral;}
+            50% {background-color: yellow;}
+            100% {background-color: coral;}
+        } */
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* animation-name: slideAnimation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite; */
+            animation: slideAnimation 5s linear 3s infinite;
+            /* transform: translateY(500px); */
+        }
+        @keyframes slideAnimation {
+            0% {
+                transform: translateX(0);
+                background-color: coral;
+                border-radius: 0;
+            }
+            50% {
+                background-color: red;
+                border-radius: 20px;
+            }
+            100% {
+                transform: translateX(500px);
+                background-color: blue;
+                border-radius: 50%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

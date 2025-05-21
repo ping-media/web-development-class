@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Hero Section</title>
+    <!-- https://codepen.io/oliviale/pen/YgzNzK -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            background-image: url('../../assets/img/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        /* @keyframes myAnimation {
+            0% {background-color: coral;}
+            50% {background-color: yellow;}
+            100% {background-color: coral;}
+        } */
+        .text span{
+            font-size: 120px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 900;
+            padding: 0 40px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+        .text span:hover{
+            transform: translateY(-20px);
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <span>P</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span>M</span>
+            <span>E</span>
+            <span>D</span>
+            <span>I</span>
+            <span>A</span>
+        </div>
+    </div>
+</body>
+</html>
