@@ -36,8 +36,11 @@
             transition: all 0.3s ease-in-out;
             display: inline-block;
         }
-        .text span:hover{
+        .text:hover span:nth-child(even){
             transform: translateY(-20px);
+        }
+        .text:hover span:nth-child(odd){
+            transform: translateY(20px);
         }
         </style>
 </head>
