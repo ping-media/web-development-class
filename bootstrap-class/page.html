@@ -107,18 +107,21 @@
                             <div class="card-body">
                                 <h5 class="card-title">Golden Triangle Tour</h5>
                                 <p class="card-text">Explore the iconic cities of Delhi, Agra, and Jaipur in this classic tour.</p>
-                                <a href="#" class="btn btn-primary">View All</a>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Default tooltip">View All</a>
+                                <div class="vr"></div>
                                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Enquiry Now</button>
                             </div>
                         </div>
                     </div>  
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        
+                        <div class="card shadow-lg">
                             <img src="/assets/img/tour/amritsar11.jpg" class="card-img-top" alt="Tour 2">
                             <div class="card-body">
                                 <h5 class="card-title">Amritsar Tour</h5>
-                                <p class="card-text">Experience the royal heritage of Rajasthan with visits to its majestic forts and palaces.</p>
-                                <a href="#" class="btn btn-primary">View All</a>
+                                <p class="card-text text-truncate">Experience the royal heritage of Rajasthan with visits to its majestic forts and palaces.</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Default tooltip">View All</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -128,7 +131,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Rajasthan Tour</h5>
                                 <p class="card-text">Relax and rejuvenate in the serene backwaters of Kerala.</p>
-                                <a href="#" class="btn btn-primary">View All</a>
+                                <a href="#" class="btn btn-primary stretched-link">View All</a>
                             </div>
                         </div>
                     </div>
@@ -161,6 +164,29 @@
                                 <a href="#" class="btn btn-primary">View All</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+
+                        <div class="card" aria-hidden="true">
+                            <img src="https://placehold.co/600x400?text=Travocation" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                                </h5>
+                                <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                            </div>
+                        </div>
+
+                        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+</div>
                     </div>
                 </div>
             </div>
@@ -240,7 +266,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-primary text-center mb-4">About Taj Mahal</h2>
+                        <h2 class="text-primary text-center mb-4" data-bs-theme="dark">About Taj Mahal <span data-bs-toggle="popover" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">ℹ️</span></h2>
                         <p class="text-center">The Taj Mahal, located in Agra, India, is one of the most iconic monuments in the world and a UNESCO World Heritage Site. Built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this white marble mausoleum is a symbol of eternal love and architectural brilliance. Construction began in 1632 and took around 22 years to complete. </p>
                         <div class="collapse" id="collapseExample">
                             <p>
@@ -249,11 +275,78 @@
                         </div>
                         <p class="text-center">
                             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Read More</button>
+                            <button class="btn btn-success" type="button" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">Quick Info</button>
+
+                            <button type="button" class="btn btn-primary" id="liveToastBtn"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Show Notification</button>
                         </p>
                     </div>
                 </div>
             </div>
           </section>
+
+          <section class="ratio_wrap">
+            <div class="container d-flex gap-3">
+                <div class="ratio ratio-1x1 bg-light">
+                    <div>1x1</div>
+                </div>
+                <div class="ratio ratio-4x3 bg-light">
+                    <div>4x3</div>
+                </div>
+                <div class="ratio ratio-16x9 bg-light">
+                    <div>16x9</div>
+                </div>
+                <div class="ratio ratio-21x9 bg-light">
+                    <div>21x9</div>
+                </div>
+            </div>
+          </section>
+          
+
+          <section class="price_table py-5">
+            <div class="container">
+                <table class="table table-bordered table-striped" data-bs-theme="dark">
+                    <thead>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Phone
+                        </th>
+                        <th>
+                            Address
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manish</td>
+                            <td>+91-9876543210</td>
+                            <td>Dev Nagar, Khandari, Agra, 282002</td>
+                        </tr>
+                        <tr>
+                            <td>Manish</td>
+                            <td>+91-9876543210</td>
+                            <td>Dev Nagar, Khandari, Agra, 282002</td>
+                        </tr>
+                        <tr>
+                            <td>Manish</td>
+                            <td>+91-9876543210</td>
+                            <td>Dev Nagar, Khandari, Agra, 282002</td>
+                        </tr>
+                        <tr>
+                            <td>Manish</td>
+                            <td>+91-9876543210</td>
+                            <td>Dev Nagar, Khandari, Agra, 282002</td>
+                        </tr>
+                        <tr>
+                            <td>Manish</td>
+                            <td>+91-9876543210</td>
+                            <td>Dev Nagar, Khandari, Agra, 282002</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </section>
+
 
 <!-- footer section -->
         <footer class="bg-primary text-white py-2">
@@ -383,6 +476,45 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+
+        // setTimeout(() => {
+        //     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        //     toastBootstrap.show()
+        // }, 3000);
+
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar-example'
+        })
+     </script>
 </body>
 </html>
